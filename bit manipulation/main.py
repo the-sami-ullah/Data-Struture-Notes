@@ -57,6 +57,9 @@ def bit_operations(x, i):
     print("Power of Two:",
           x > 0 and (x & (x - 1)) == 0)
 
+
+
+
     # ----------------------------------------------------
     # 10. Remove Lowest Set Bit
     # ----------------------------------------------------
@@ -103,20 +106,7 @@ for num in nums:
 print("Single Number:", ans)
 
 
-# ==========================================================
-# XOR Trick 2 : Missing Number
-# Numbers are 0...n
-# ==========================================================
 
-nums = [3, 0, 1]
-
-missing = len(nums)
-
-for i in range(len(nums)):
-    missing ^= i
-    missing ^= nums[i]
-
-print("Missing Number:", missing)
 
 
 # ==========================================================
