@@ -50,6 +50,7 @@ class Solution:
 
             current_distance, node = heapq.heappop(heap)
 
+            # most important line of code of dijkstra
             if current_distance > distance[node]:
                 continue
 
