@@ -1,6 +1,11 @@
+# merge sort is used when we want to sort the stable not inplace unique elements in the array. It is a divide and conquer algorithm. It works by dividing the unsorted list into n sublists, each containing one element (a list of one element is considered sorted), then repeatedly merging sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.
+
+# worst case time complexity is O(n log n) and best case time complexity is O(n log n). It is a stable sorting algorithm. It is not an in-place sorting algorithm.
+
+
+
 def merge_sort(arr, low, high):
-    
-    
+     
     if low < high:
         mid = (low + high) // 2
         
@@ -29,6 +34,7 @@ def merge(arr, low, mid, high):
             arr[k] = right[j]
             j += 1
         k += 1
+        
     arr[k:high + 1] = left[i:] + right[j:]
 
 
